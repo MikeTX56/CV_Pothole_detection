@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['potholes']
+
+roboflow:
+  workspace: humna-siddiqui
+  project: potholes-la8kf
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/humna-siddiqui/potholes-la8kf/dataset/1

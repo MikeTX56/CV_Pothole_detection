@@ -1,0 +1,8 @@
+ultralytics
+matplotlib
+opencv-python
+Pillow
+numpy
+onnx
+onnxruntime-gpu
+onnxslim
