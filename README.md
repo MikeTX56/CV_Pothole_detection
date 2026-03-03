@@ -14,11 +14,8 @@ This project demonstrates the training and deployment of YOLOv8 models for detec
    - [Model Performance](#model-performance)
    - [Real-time Inference](#real-time-inference)
 6. [Exported Model (ONNX)](#exported-model-onnx)
-7. [Project Structure](#project-structure)
-8. [Future Work](#future-work)
-9. [Acknowledgements](#acknowledgements)
-10. [Screenshots of Detection Outputs](#screenshots-of-detection-outputs)
-11. [License](#license)
+7. [Acknowledgements](#acknowledgements)
+8. [Screenshots of Detection Outputs](#screenshots-of-detection-outputs)
 
 ## Features
 - Pothole detection using YOLOv8 (nano, small, and medium variants).
@@ -144,28 +141,6 @@ onnx_model = YOLO("runs/detect/yolov8s_custom/weights/best.onnx")
 print(f"ONNX model loaded successfully from: {onnx_model.model_name}")
 ```
 
-## Project Structure
-```text
-.
-├── data.yaml
-├── requirements.txt
-├── yolov8_pothole_detection.ipynb
-├── runs/
-│   └── detect/
-│       ├── result_images/
-│       └── yolov8s_custom/
-│           └── weights/
-│               ├── best.pt
-│               └── best.onnx
-└── README.md
-```
-
-## Future Work
-- Model quantization (e.g., INT8) for edge deployment.
-- Dataset expansion and augmentation for more robust detection.
-- Deployment on edge devices like NVIDIA Jetson or Raspberry Pi.
-- Integration with web/mobile applications for reporting.
-
 ## Acknowledgements
 - Ultralytics for the YOLOv8 framework.
 - Roboflow for dataset management and annotation tools.
@@ -173,6 +148,3 @@ print(f"ONNX model loaded successfully from: {onnx_model.model_name}")
 
 ## Screenshots of Detection Outputs
 ![YOLOv8s Training Results](runs/detect/result_images/potholes.png)
-
-## License
-This project is licensed under the MIT License.

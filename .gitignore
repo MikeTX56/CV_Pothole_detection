@@ -1,2 +1,10 @@
 runs/
+!runs/
+!runs/detect/
+runs/detect/*
+!runs/detect/result_images/
+runs/detect/result_images/*
+!runs/detect/result_images/potholes.png
+
 *.pt
+*.onnx
